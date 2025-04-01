@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "11015430-4F6D-43E7-A85C-29EC7E05F617",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CryptoSuiteExample.xcodeproj",
+      "identifier" : "CC2F37122D67F79900622789",
+      "name" : "CryptoSuiteExample"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:CryptoSuiteExample.xcodeproj",
+        "identifier" : "CC2F37232D67F79A00622789",
+        "name" : "CryptoSuiteExampleTests"
+      }
+    }
+  ],
+  "version" : 1
+}

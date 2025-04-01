@@ -1,0 +1,24 @@
+{
+  "originHash" : "1a93b7d217d0b07b5664b8b69a7d0e1055cc8dac0fbe25a37d04d1e8e9c92310",
+  "pins" : [
+    {
+      "identity" : "keyrmes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bpluta/Keyrmes.git",
+      "state" : {
+        "revision" : "17ec16879771959d9822a11028a81549dc2328f0",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

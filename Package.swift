@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,10 +15,12 @@ let package = Package(
     products: [
         .library(
             name: "CryptoSuite",
-            targets: ["CryptoSuite"]),
+            type: .dynamic,
+            targets: ["CryptoSuite"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/bpluta/Keyrmes.git", from: "1.0.0"),
+        .package(url: "https://github.com/bpluta/Keyrmes.git", from: "1.0.1"),
     ],
     targets: [
         .target(

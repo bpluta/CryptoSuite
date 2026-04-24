@@ -6,17 +6,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bpluta/Keyrmes.git",
       "state" : {
-        "revision" : "17ec16879771959d9822a11028a81549dc2328f0",
-        "version" : "1.0.0"
+        "revision" : "d645f97fecce6f30e294ac129daa7a19fb345b14",
+        "version" : "1.0.1"
       }
     },
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
       "state" : {
-        "revision" : "0687f71944021d616d34d922343dcef086855920",
-        "version" : "600.0.1"
+        "revision" : "9de99a78f099e59caf2b2beec65a4c45d54b2081",
+        "version" : "603.0.1"
       }
     }
   ],

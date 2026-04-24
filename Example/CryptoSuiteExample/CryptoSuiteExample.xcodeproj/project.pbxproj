@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC2F37432D67F7D500622789 /* CryptoSuite in Frameworks */ = {isa = PBXBuildFile; productRef = CC2F37422D67F7D500622789 /* CryptoSuite */; };
+		CC4222952F9C1E6A006425BE /* CryptoSuite in Frameworks */ = {isa = PBXBuildFile; productRef = CC4222942F9C1E6A006425BE /* CryptoSuite */; };
+		CC4222962F9C1E6A006425BE /* CryptoSuite in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CC4222942F9C1E6A006425BE /* CryptoSuite */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,6 +21,20 @@
 			remoteInfo = CryptoSuiteExample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC4222972F9C1E6A006425BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC4222962F9C1E6A006425BE /* CryptoSuite in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC2F37132D67F79900622789 /* CryptoSuiteExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSuiteExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4222952F9C1E6A006425BE /* CryptoSuite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +81,7 @@
 				CCC3BFF82D765597003526AB /* CryptoSuiteExample.xctestplan */,
 				CC2F37152D67F79900622789 /* CryptoSuiteExample */,
 				CC2F37272D67F79A00622789 /* CryptoSuiteExampleTests */,
+				CC4222932F9C1E6A006425BE /* Frameworks */,
 				CC2F37142D67F79900622789 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +93,13 @@
 				CC2F37242D67F79A00622789 /* CryptoSuiteExampleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4222932F9C1E6A006425BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +135,7 @@
 				CC2F37202D67F79A00622789 /* Sources */,
 				CC2F37212D67F79A00622789 /* Frameworks */,
 				CC2F37222D67F79A00622789 /* Resources */,
+				CC4222972F9C1E6A006425BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,6 +147,7 @@
 			);
 			name = CryptoSuiteExampleTests;
 			packageProductDependencies = (
+				CC4222942F9C1E6A006425BE /* CryptoSuite */,
 			);
 			productName = CryptoSuiteExampleTests;
 			productReference = CC2F37242D67F79A00622789 /* CryptoSuiteExampleTests.xctest */;
@@ -134,7 +161,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					CC2F37122D67F79900622789 = {
 						CreatedOnToolsVersion = 16.2;
@@ -245,7 +272,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 76HYQ4AXM3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -267,6 +296,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -306,7 +336,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 76HYQ4AXM3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -321,6 +353,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -333,8 +366,8 @@
 				CODE_SIGN_ENTITLEMENTS = CryptoSuiteExample/CryptoSuiteExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoSuiteExample/Preview Content\"";
-				DEVELOPMENT_TEAM = 76HYQ4AXM3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -374,8 +407,8 @@
 				CODE_SIGN_ENTITLEMENTS = CryptoSuiteExample/CryptoSuiteExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoSuiteExample/Preview Content\"";
-				DEVELOPMENT_TEAM = 76HYQ4AXM3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -413,7 +446,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 76HYQ4AXM3;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -436,7 +469,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 76HYQ4AXM3;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -495,6 +528,11 @@
 /* Begin XCSwiftPackageProductDependency section */
 		CC2F37422D67F7D500622789 /* CryptoSuite */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = CryptoSuite;
+		};
+		CC4222942F9C1E6A006425BE /* CryptoSuite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC2F37412D67F7D500622789 /* XCLocalSwiftPackageReference "../../../CryptoSuite" */;
 			productName = CryptoSuite;
 		};
 /* End XCSwiftPackageProductDependency section */
